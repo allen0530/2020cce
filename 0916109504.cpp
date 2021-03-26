@@ -1,20 +1,17 @@
 #include <stdio.h>
-struct DATA{
-    int x,y;
-}a[3];
-struct DATA b={100,200};
- int main()
- {
-     for(int i=0;i<3;i++){
-        printf("a[%d]:%d %d\n",i,a[i].x,a[i].y);
-     }
-     printf("b: %d %d\n",b.x,b.y);
-     struct DATA c;
-
-     printf("c: %d %d 像亂碼\n",c.x,c.y);
-
-     c=b;
-     printf("c: %d %d\n",c.x,c.y);
+#include <string.h>
+int main()
+{
+    char line[10]="majority";
+    char line2[10]="ask";
+    if(strcmp(line,line2)>0){
+            printf("左邊大\n");
+    }else{
+    printf("右邊大\n");
+    }
 
 
- }
+
+
+
+}

@@ -1,16 +1,15 @@
 #include <stdio.h>
-struct POINT{
-    float x,y;
-};
- int main()
- {
-     struct POINT a={4.1,3.2};
-     printf("%f %f\n",a.x,a.y);
+int main()
+{
+    char line[5][10]={"decline","proper","majority","bullet","shop"};
+    for(int i=0;i<5;i++){
+        printf("%s\n",line[i]);
+    }
 
-     a.x=1;
-     a.y=2;
-     printf("%f %f\n",a.x,a.y);
 
-     return 0;;
 
- }
+
+
+
+
+}
