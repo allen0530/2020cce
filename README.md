@@ -387,7 +387,7 @@ int main()
     printf("%s\n",line2);
     }
 ```
-## 第十八個程式
+## 第十九個程式
 ```c
 #include <stdio.h>
 int main()
@@ -409,15 +409,30 @@ int main()
 
 }
 ```
-## 第十八個程式
+## 第二十個程式
+```c
+#include <stdio.h>
+int main()
+{
+    char line[5][10]={"decline","proper","majority","bullet","shop"};
+    for(int i=0;i<5;i++){
+        printf("%s\n",line[i]);
+    }
+
+
+
+
+
+
+
+}
+```
+## 第二十一個程式
 ```c
 ```
-## 第十八個程式
+## 第二十二個程式
 ```c
 ```
-## 第十八個程式
-```c
-```
-## 第十八個程式
+## 第二十三個程式
 ```c
 ```
