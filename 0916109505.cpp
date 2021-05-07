@@ -1,24 +1,17 @@
 #include <stdio.h>
-#include <string.h>
-char line[100][10];
+char line[2000];
+int ans[256];
 int main()
 {
-	int n;
-	scanf("%d",&n);
-	for(int i=0;i<n;i++){
-	scanf("%s",line[i]);
-	}
-	char temp[10];
-	for(int i=0;i<n;i++){
-	for(int j=i+1;j<n;j++){
-	if(strcmp(line[i],line[j])>0){
-	strcpy(temp,line[i]);
-	strcpy(line[i],line[j]);
-	strcpy(line[j],temp);
+	for(int t=0;gets(line);t++){
+    for(int i=0;i<256;i++) ans[i]=0;
+    for(int i=0;line[i]!=0;i++){
+        char c =line[i];
+        ans[c]++;
+    }
+	if(t>0) printf("\n");
+	for(int i=0;i<256;i++){
+        if(ans[i]>0) printf("%d %d\n",i,ans[i]);
 	}
 	}
-	}
-	for(int i=0;i<n;i++){
-	printf("%s\n",line[i]);
-	}
-	}
+}
