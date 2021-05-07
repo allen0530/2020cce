@@ -1,9 +1,12 @@
 #include <stdio.h>
+struct data{
+    int ans;
+    char c;
+};
+struct data box;
 int main()
 {
-printf("請看看值是多少:%d",'\0');
-
-
-
-
+    box.ans=1;
+    box.c='A';
+    printf("%c %d\n",box.c,box.ans);
 }
