@@ -625,6 +625,19 @@ int main()
 ```
 ## 第二十八個程式
 ```c
+
+#include <stdio.h>
+char line[2000];
+
+int main()
+{
+	for(int t=0;gets(line);t++){
+    if(t>0) printf("\n");
+    printf("blahblahblah");
+    printf("blahblahblah");
+    printf("blahblahblah");
+	}
+}
 ```
 ## 第二十九個程式
 ```c
