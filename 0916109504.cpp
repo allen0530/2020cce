@@ -1,17 +1,12 @@
 #include <stdio.h>
-#include <string.h>
+typedef struct data{
+    int ans;
+    char c;
+} DATA;
+DATA box;
 int main()
 {
-    char line[10]="majority";
-    char line2[10]="ask";
-    if(strcmp(line,line2)>0){
-            printf("左邊大\n");
-    }else{
-    printf("右邊大\n");
-    }
-
-
-
-
-
+    box.ans=1;
+    box.c='A';
+    printf("%c %d\n",box.c,box.ans);
 }
